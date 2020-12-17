@@ -1,0 +1,137 @@
+.timeline {
+    background-image: url("../img/timeline/timeline-bg.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    block-size: auto;
+
+    padding-top: 145px;
+    padding-bottom: 148px;
+}
+
+.timeline .title2 {
+    margin-bottom: 121px;
+    text-align: center;
+}
+
+.timeline-block_item {
+    position: relative;
+    width: 100%;
+    padding-left: 98px;
+    min-height: 175px;
+
+    &:after {
+        content: "";
+        width: 4px;
+        background-color: rgb(225, 238, 244);
+        position: absolute;
+        top: 72px;
+        bottom: -6px;
+        left: 32px;
+    }
+
+    &:first-child:before {
+        content: "";
+        width: 4px;
+        background-color: rgb(225, 238, 244);
+        position: absolute;
+        top: -98px;
+        bottom: 218px;
+        right: -2px;
+    }
+
+    &:last-child:after {
+        content: none;
+    }
+
+    @media(min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.timeline-block_item:nth-child(even){
+    @media(min-width: 768px) {
+        margin-left: auto;
+
+        &:after {
+            left:-2px;
+        }
+
+        .timeline-item_icon {
+            left: -37px;
+        }
+    }
+}
+
+.timeline-block_item:nth-child(odd){
+    @media(min-width: 768px) {
+        padding-left: 0;
+        padding-right: 75px;
+        text-align: right;
+
+        &:after {
+            left:auto;
+            right: -2px;
+        }
+
+        .timeline-item_icon {
+            left: auto;
+            right: -37px;
+        }
+    }
+}
+
+.timeline-block_item +.timeline-block_item {
+    margin-top: 50px;
+}
+
+.title5 {
+    font-size: 26px;
+    font-weight: 800;
+    padding-bottom: 11px;
+    line-height: 1.2;
+
+    .underline {
+        
+        z-index: 1;
+
+        &:after {
+            bottom: 5px;
+            height: 7px;
+        }
+    }  
+}
+
+.timeline-item_text {
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 13px;
+        line-height: 1.2;
+
+        &:last-child {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.timeline-item_icon {
+    position: absolute;
+    left: 0;
+    top: -22px;
+    width: 74px;
+    height: 74px;
+    border-radius: 28px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+
+    img {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%); 
+    }  
+}

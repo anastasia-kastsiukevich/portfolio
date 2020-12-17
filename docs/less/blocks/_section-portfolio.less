@@ -1,0 +1,54 @@
+.portfolio {
+    background-color: #f4f8f9;
+    padding-top: 98px;
+    padding-bottom: 48px;
+}
+
+.title2 {
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 46px;
+
+    .underline {
+        z-index: 1;
+        
+        &:after {
+            bottom: 12px;
+        }
+    }
+}
+
+.project_text {
+
+    button {
+        display: inline-block;
+
+        margin-bottom: 47px;
+        margin-right: 78px;
+        font-size: 28px;
+        font-weight: 800;
+        color: #8fa5ae;
+        font-family: 'M PLUS 1p', sans-serif;
+
+        // transition: 0.5s;
+
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            color: var(--text);
+        }
+
+        &:active {
+            color: var(--text);
+        }
+        }
+}
+
+.control-active {
+    &:active {
+        color: var(--text);
+    }
+}
