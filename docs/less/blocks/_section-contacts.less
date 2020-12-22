@@ -9,27 +9,31 @@
 }
 
 .section-contacts .title2 {
-    margin-bottom: 72px;
+    margin-bottom: 57px;
     text-align: center;
 }
 
 .section-contacts_wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
     z-index: 1;
 
     .contacts-img {
         position: absolute;
-        transform: translate(-80%, -10%);
+        transform: translate(-79%, -1%);
         z-index: -1;
     }
 }
 
-.contacts-content_link p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin-bottom: 50px;
+.contacts-content_link {
+    padding-top: 22px;
+    margin-right: 107px;
+
+    p {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 45px;
+    }
 }
 
 .link-name {
@@ -39,7 +43,7 @@
     margin-bottom: 47px;
 
     li {
-        margin-bottom: 36px;
+        margin-bottom: 22px;
 
         &:last-child {
             margin-bottom: 0;
@@ -49,7 +53,7 @@
     span {
         display: inline-block;
         width: 90px;
-        margin-right: 110px;
+        margin-right: 105px;
         color: #000000;
     }
 }
@@ -95,9 +99,9 @@
 
         #email {
             width: 100%;
-            height: 65px;
+            height: 63px;
             border-bottom: 1px solid #bcbcbc;
-            padding-top: 25px;
+            padding-top: 9px;
 
             &:focus {
                 border-color: var(--red);
@@ -114,11 +118,11 @@
             font-weight: 700;
             font-family: 'M PLUS 1p', sans-serif;
             color: #bcbcbc;
-            bottom: 6px;
+            bottom: 13px;
             left: 2px;
 
             &:focus {
-                bottom: 30px;
+                bottom: 13px;
                 color: #ed9626;
                 font-size: 16px;
             }
@@ -144,11 +148,14 @@
         height: 173px;
         border-bottom: 1px solid #bcbcbc;
         margin-bottom: 42px;
-        padding-bottom: 15px;
+        padding-bottom: 35px;
     }
 
     .filled-button {
         cursor: pointer;
+        height: 63px;
+        padding-right: 51px;
+        padding-left: 38px;
     }
 }
 
