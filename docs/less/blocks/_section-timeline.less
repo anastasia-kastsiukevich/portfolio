@@ -4,12 +4,12 @@
     background-position: center;
     block-size: auto;
 
-    padding-top: 145px;
+    padding-top: 171px;
     padding-bottom: 148px;
 }
 
 .timeline .title2 {
-    margin-bottom: 121px;
+    margin-bottom: 167px;
     text-align: center;
 }
 
@@ -85,20 +85,31 @@
 }
 
 .title5 {
+    position: relative;
+    display: inline-block;
     font-size: 26px;
     font-weight: 800;
     padding-bottom: 11px;
     line-height: 1.2;
+    z-index: 1;
 
-    .underline {
-        
-        z-index: 1;
+    &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 12px;
+        height: 7px;
+        background-color: var(--yellow);
+        z-index: -1;
+        width: 100%;
+        transition: 0.5s;
+    }
+}
 
-        &:after {
-            bottom: 5px;
-            height: 7px;
-        }
-    }  
+.timeline-block_item:hover {
+    .title5:after {
+        background-color: #ea736d;
+    }
 }
 
 .timeline-item_text {

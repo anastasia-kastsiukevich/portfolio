@@ -1,0 +1,51 @@
+.footer {
+    padding-top: 27px;
+    padding-bottom: 43px;
+    background-color: #333333;
+
+    p {
+        &:first-child {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #ffffff;
+            line-height: 1;
+        }
+    
+        font-size: 16px;
+        color: #b0b0b0;
+        line-height: 1.6;
+    
+        a {
+            position: relative;
+            color: #b0b0b0;
+            transition: 0.5s;
+    
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background-color: #b0b0b0;
+            }
+    
+            &:hover {
+                color: #ffffff;
+        
+                &:after {
+                    background-color: #ffffff;
+                }
+            }
+    
+            &:active {
+                color: #ffffff;
+        
+                &:after {
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}
