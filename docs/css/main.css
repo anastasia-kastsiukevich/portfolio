@@ -817,76 +817,91 @@ button {
   height: 545px;
   width: 511px;
 }
-.contacts-form input,
-.contacts-form textarea {
-  border: none;
+.form-item {
+  position: relative;
+}
+label {
+  position: absolute;
+  left: 2px;
+  top: 20px;
   font-size: 20px;
   font-weight: 700;
   font-family: 'M PLUS 1p', sans-serif;
+  color: #bcbcbc;
+  -webkit-transition: top 0.5s;
+  -o-transition: top 0.5s;
+  -moz-transition: top 0.5s;
+  transition: top 0.5s;
 }
-.contacts-form input::-webkit-input-placeholder,
-.contacts-form textarea::-webkit-input-placeholder {
+input,
+textarea {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'M PLUS 1p', sans-serif;
+  border: none;
+  border-bottom: 1px solid #bcbcbc;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input:-moz-placeholder,
-.contacts-form textarea:-moz-placeholder {
+input:-moz-placeholder,
+textarea:-moz-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::-moz-placeholder,
-.contacts-form textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input:-ms-input-placeholder,
-.contacts-form textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::-ms-input-placeholder,
-.contacts-form textarea::-ms-input-placeholder {
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::placeholder,
-.contacts-form textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #bcbcbc;
 }
-.contacts-form .email {
+.email {
   width: 100%;
   height: 63px;
-  border-bottom: 1px solid #bcbcbc;
   padding-top: 9px;
 }
-.contacts-form .topic {
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -3px;
+  color: #ed9626;
+  font-size: 16px;
+}
+input:active + label {
+  top: -3px;
+  color: #ed9626;
+  font-size: 16px;
+}
+.topic {
   width: 100%;
   height: 105px;
-  border-bottom: 1px solid #bcbcbc;
   padding-top: 55px;
 }
-.contacts-form .message {
+.message {
   width: 100%;
   height: 173px;
-  border-bottom: 1px solid #bcbcbc;
   margin-bottom: 34px;
   padding-top: 54px;
 }
-.contacts-form .filled-button {
+.filled-button {
   cursor: pointer;
   height: 63px;
   padding-right: 51px;
   padding-left: 38px;
-}
-.form-item {
-  position: relative;
-}
-.fake-placeholder {
-  position: absolute;
-  font-weight: 700;
-  top: 26px;
-  left: 2px;
-  pointer-events: none;
-}
-.fake-placeholder.active {
-  top: 0;
-  font-size: 16px;
-  color: #ed9626;
 }
 .footer {
   padding-top: 27px;
