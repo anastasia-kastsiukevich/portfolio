@@ -5,7 +5,8 @@
     background-color: #f4f8f9;
     block-size: auto;
 
-    padding: 150px 0px;
+    padding-top: 150px;
+    padding-bottom: 140px;
 }
 
 .section-contacts .title2 {
@@ -66,6 +67,8 @@
     color: #96969d;
 }
 
+/* ----------------------------------------------------- CONTACTS FORM ----------------------------------------------------- */
+
 .contacts-form {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -76,7 +79,7 @@
     height: 545px;
     width: 511px;    
 
-    input {
+    input, textarea {
         border: none;
         font-size: 20px;
         font-weight: 700;
@@ -84,55 +87,17 @@
 
         &::placeholder {
             color: #bcbcbc;
-
-            &:hover {
-                color: red;
-            }
         }
     }
 }
 
 .contacts-form  {
 
-    .label-up {
-        position: relative;
-
-        #email {
-            width: 100%;
-            height: 63px;
-            border-bottom: 1px solid #bcbcbc;
-            padding-top: 9px;
-
-            &:focus {
-                border-color: var(--red);
-            }
-
-            &:active {
-                border-color: var(--red);
-            }
-        }
-
-        label {
-            position: absolute;
-            font-size: 20px;
-            font-weight: 700;
-            font-family: 'M PLUS 1p', sans-serif;
-            color: #bcbcbc;
-            bottom: 13px;
-            left: 2px;
-
-            &:focus {
-                bottom: 13px;
-                color: #ed9626;
-                font-size: 16px;
-            }
-            
-            &:active {
-                bottom: 30px;
-                color: #ed9626;
-                font-size: 16px;
-            }
-        }
+    .email {
+        width: 100%;
+        height: 63px;
+        border-bottom: 1px solid #bcbcbc;
+        padding-top: 9px;
     }
 
     .topic {
@@ -141,14 +106,13 @@
         border-bottom: 1px solid #bcbcbc;
         padding-top: 55px;
     }
-    
 
     .message {
         width: 100%;
         height: 173px;
         border-bottom: 1px solid #bcbcbc;
-        margin-bottom: 42px;
-        padding-bottom: 35px;
+        margin-bottom: 34px;
+        padding-top: 54px;
     }
 
     .filled-button {
@@ -159,3 +123,20 @@
     }
 }
 
+.form-item {
+    position: relative;
+}
+
+.fake-placeholder {
+    position: absolute;
+    font-weight: 700;
+    top: 26px;
+    left: 2px;
+    pointer-events: none;
+}
+
+.fake-placeholder.active {
+    top: 0;
+    font-size: 16px;
+    color: #ed9626;
+}

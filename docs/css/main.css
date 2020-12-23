@@ -47,8 +47,19 @@ svg {
   max-width: 100%;
 }
 button,
-input {
+input,
+textarea {
   outline: none;
+}
+textarea {
+  resize: none;
+}
+input[type="radio"],
+input[type="radio"] input[type="submit"] {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: none;
+  -webkid-appearance: none;
 }
 button {
   display: inline-block;
@@ -735,7 +746,8 @@ button {
   background-position: center;
   background-color: #f4f8f9;
   block-size: auto;
-  padding: 150px 0px;
+  padding-top: 150px;
+  padding-bottom: 140px;
 }
 .section-contacts .title2 {
   margin-bottom: 57px;
@@ -792,6 +804,7 @@ button {
 .text-grey {
   color: #96969d;
 }
+/* ----------------------------------------------------- CONTACTS FORM ----------------------------------------------------- */
 .contacts-form {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -804,81 +817,42 @@ button {
   height: 545px;
   width: 511px;
 }
-.contacts-form input {
+.contacts-form input,
+.contacts-form textarea {
   border: none;
   font-size: 20px;
   font-weight: 700;
   font-family: 'M PLUS 1p', sans-serif;
 }
-.contacts-form input::-webkit-input-placeholder {
+.contacts-form input::-webkit-input-placeholder,
+.contacts-form textarea::-webkit-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input:-moz-placeholder {
+.contacts-form input:-moz-placeholder,
+.contacts-form textarea:-moz-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::-moz-placeholder {
+.contacts-form input::-moz-placeholder,
+.contacts-form textarea::-moz-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input:-ms-input-placeholder {
+.contacts-form input:-ms-input-placeholder,
+.contacts-form textarea:-ms-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::-ms-input-placeholder {
+.contacts-form input::-ms-input-placeholder,
+.contacts-form textarea::-ms-input-placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::placeholder {
+.contacts-form input::placeholder,
+.contacts-form textarea::placeholder {
   color: #bcbcbc;
 }
-.contacts-form input::-webkit-input-placeholder:hover {
-  color: red;
-}
-.contacts-form input:-moz-placeholder:hover {
-  color: red;
-}
-.contacts-form input::-moz-placeholder:hover {
-  color: red;
-}
-.contacts-form input:-ms-input-placeholder:hover {
-  color: red;
-}
-.contacts-form input::-ms-input-placeholder:hover {
-  color: red;
-}
-.contacts-form input::placeholder:hover {
-  color: red;
-}
-.contacts-form .label-up {
-  position: relative;
-}
-.contacts-form .label-up #email {
+.contacts-form .email {
   width: 100%;
   height: 63px;
   border-bottom: 1px solid #bcbcbc;
   padding-top: 9px;
-}
-.contacts-form .label-up #email:focus {
-  border-color: var(--red);
-}
-.contacts-form .label-up #email:active {
-  border-color: var(--red);
-}
-.contacts-form .label-up label {
-  position: absolute;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'M PLUS 1p', sans-serif;
-  color: #bcbcbc;
-  bottom: 13px;
-  left: 2px;
-}
-.contacts-form .label-up label:focus {
-  bottom: 13px;
-  color: #ed9626;
-  font-size: 16px;
-}
-.contacts-form .label-up label:active {
-  bottom: 30px;
-  color: #ed9626;
-  font-size: 16px;
 }
 .contacts-form .topic {
   width: 100%;
@@ -890,8 +864,8 @@ button {
   width: 100%;
   height: 173px;
   border-bottom: 1px solid #bcbcbc;
-  margin-bottom: 42px;
-  padding-bottom: 35px;
+  margin-bottom: 34px;
+  padding-top: 54px;
 }
 .contacts-form .filled-button {
   cursor: pointer;
@@ -899,9 +873,24 @@ button {
   padding-right: 51px;
   padding-left: 38px;
 }
+.form-item {
+  position: relative;
+}
+.fake-placeholder {
+  position: absolute;
+  font-weight: 700;
+  top: 26px;
+  left: 2px;
+  pointer-events: none;
+}
+.fake-placeholder.active {
+  top: 0;
+  font-size: 16px;
+  color: #ed9626;
+}
 .footer {
   padding-top: 27px;
-  padding-bottom: 43px;
+  padding-bottom: 39px;
   background-color: #333333;
 }
 .footer p {
@@ -912,7 +901,7 @@ button {
 .footer p:first-child {
   font-size: 18px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #ffffff;
   line-height: 1;
 }

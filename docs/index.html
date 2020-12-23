@@ -390,14 +390,20 @@
     
                     <form action="mailto:yurij.kluchevsky@gmail.com" method="post">
 
-                        <div class="label-up">
-                            <p><input type="text" id="email" name="email" placeholder="Ваш Email" required></p>
-                            <label for="email">Ваш Email</label>
+                        <div class="form-item">
+                            <span class="fake-placeholder">Ваш email</span>
+                            <input type="text" name="email" placeholder="Ваш Email" required required class="email">
                         </div>
 
-                        <p><input type="text" name="topic of the letter" placeholder="Тема письма" required class="topic"></p>
-                        <p><input type="text" name="message" placeholder="Сообщение" required class="message"></p>
-                        <p><input type="submit" value="Отправить" class="filled-button"></p>
+                        <div class="form-item">
+                            <input type="text" name="topic of the letter" placeholder="Тема письма" required class="topic">
+                        </div>
+
+                        <div class="form-item">
+                            <textarea type="text" name="message" placeholder="Сообщение" required class="message"></textarea>
+                        </div>
+
+                        <div><input type="submit" value="Отправить" class="filled-button"></div>
 
                     </form>
 
