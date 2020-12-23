@@ -10,10 +10,10 @@ $(document).ready(function(){
 });
 
 /* form placeholder */
-const formItems = document.querySelector(".email");
+const formItems = document.querySelector(".form-field");
 
 for (let item of formItems){
-  const thisParent = item.closest(".form-email");
+  const thisParent = item.closest(".form-item");
   const thisPlaceholder = thisParent.querySelector(".fake-placeholder");
 
   /* если инпут в фокусе */
