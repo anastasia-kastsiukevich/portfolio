@@ -9,6 +9,14 @@
 </head>
 <body>
 
+    <!-- overlay -->
+    <div id="overlay"></div>
+    <!-- //overlay -->
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu"></div>
+    <!-- // mobile-menu -->
+
     <!-- header -->
     <header class="header">
         
@@ -42,6 +50,9 @@
                 </a>
 
             </nav>
+            <button class="toggle-menu">
+                <span></span>
+            </button>
 
         </div>
         <!-- // header-nav -->
@@ -391,16 +402,16 @@
                     <form action="mailto:yurij.kluchevsky@gmail.com" method="post">
 
                         <div class="form-item">
-                            <input type="email" id="form-email" name="email" placeholder="Ваш Email" required class="form-field email">
+                            <input type="email" id="form-email" name="email" placeholder="Ваш Email" required class="email">
                             <label for="form-email">Ваш Email</label>
                         </div>
 
                         <div class="form-item">
-                            <input type="text" name="topic of the letter" placeholder="Тема письма" required class="form-field topic">
+                            <input type="text" name="topic of the letter" placeholder="Тема письма" required class="topic">
                         </div>
 
                         <div class="form-item">
-                            <textarea type="text" name="message" placeholder="Сообщение" required class="form-field message"></textarea>
+                            <textarea type="text" name="message" placeholder="Сообщение" required class="message"></textarea>
                         </div>
 
                         <div><input type="submit" value="Отправить" class="filled-button"></div>
