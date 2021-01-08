@@ -1,45 +1,80 @@
 .portfolio {
     background-color: #f4f8f9;
-    padding-top: 98px;
-    padding-bottom: 48px;
+    padding-top: 60px;
+    padding-bottom: 97px;
+
+    @media(min-width: 768px) {
+        padding-top: 81px;
+        padding-bottom: 80px;
+    }
+    
+    @media(min-width: 1200px) {
+        padding-top: 98px;
+        padding-bottom: 48px;
+    }
 }
 
 .title2 {
-    font-size: 64px;
+    font-size: 42px;
     font-weight: 800;
-    margin-bottom: 46px;
+    margin-bottom: 42px;
 
     .underline {
         z-index: 1;
-        
-        &:after {
+
+        &:after{
+            bottom: 8px;
+        }   
+    }
+
+    @media(main-width: 768px) {
+        font-size: 52px;
+        margin-bottom: 51px;
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 64px;
+        margin-bottom: 46px;
+
+        .underline:after {
             bottom: 12px;
         }
     }
 }
 
 .project_text {
-
     button {
-        display: inline-block;
+        display: none;
+    }
 
-        margin-bottom: 47px;
-        margin-right: 78px;
-        font-size: 28px;
-        font-weight: 800;
-        color: #8fa5ae;
-        font-family: 'M PLUS 1p', sans-serif;
-
-        &:last-child {
-            margin-right: 0;
+    @media(min-width: 768px) {
+        button {
+            display: inline-block;
+            font-size: 24px;
+            margin-right: 52px;
+            margin-bottom: 47px;
+            font-weight: 800;
+            color: #8fa5ae;
+            font-family: 'M PLUS 1p', sans-serif;
+        
+            &:last-child {
+                margin-right: 0;
+            }
+        
+            &:hover {
+                color: var(--text);
+            }
+        
+            &:active {
+                color: var(--text);
+            }
         }
+    }
 
-        &:hover {
-            color: var(--text);
-        }
-
-        &:active {
-            color: var(--text);
+    @media(min-width: 1200px) {
+        button {
+            font-size: 28px;
+            margin-right: 78px;
         }
     }
 }
@@ -47,5 +82,27 @@
 .control-active {
     &:active {
         color: var(--text);
+    }
+}
+
+.link-for-all-work {
+    display: inline-block;
+    font-size: 20px;
+    color: #039be5;
+    border-bottom: 1px solid #039be5;
+    transition: 0.5s;
+
+    &:hover {
+        color: var(--blue);
+        border-bottom: 1px solid var(--blue);
+    }
+
+    &:active {
+        color: blue;
+        border-bottom: 1px solid red;
+    }
+    
+    @media(min-width: 1200px) {
+        display: none;
     }
 }

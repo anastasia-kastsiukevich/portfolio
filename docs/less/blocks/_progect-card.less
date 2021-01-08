@@ -4,9 +4,36 @@
     justify-content: space-between;
 
     a {
-        margin-bottom: 60px;
+        width: 290px;
+        margin-bottom: 48px;
         transition: 0.5s;
         overflow: hidden;
+    }
+
+    @media(min-width: 768px) {
+        a {
+            width: 340px;
+            margin-bottom: 42px;
+        }
+
+        a:last-child {
+            display: none;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        a {
+            margin-bottom: 60px;
+        }
+
+        a.card-big_img {
+            width: 557px;
+        }
+
+        a:last-child {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -20,7 +47,7 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -249px);
+        transform: translate(-50%, -250px);
         background-color: #ea736d;
         color: #ffffff;
         border-color: #ea736d;
@@ -69,17 +96,29 @@
 }
 
 .card-big_img .project-card_title .title4 {
-    font-size: 32px;
+    font-size: 22px;
+
+    @media(min-width: 768px) {
+        font-size: 24px;
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 32px;
+    }
 }
 
 .project-card_img .title4 {
     position: relative;
     display: inline-block;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 6px;
     z-index: 1;
+
+    &:hover {
+        color: #ed574f;
+    }
 
     &:after {
         content: "";
@@ -90,6 +129,14 @@
         background-color: #ed574f;
         z-index: -1;
     }
+
+    @media(min-width: 768px) {
+        font-size: 24px;
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 26px;
+    }
 }
 
 .project-card_img .title4:hover {
@@ -99,10 +146,26 @@
 }
 
 .card-big_img .project-card_title p {
-    font-size: 22px;
+    font-size: 16px;
+
+    @media(min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 22px;
+    }
 }
 
 .project-card_title p {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
+
+    @media(min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 20px;
+    }
 }

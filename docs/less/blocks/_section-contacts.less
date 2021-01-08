@@ -1,12 +1,22 @@
 .section-contacts {
-    background-image: url("../img/contacts/contacts-bg.jpg");
-    background-repeat: repeat-y;
-    background-position: center;
+    padding: 60px 0px;
     background-color: #f4f8f9;
-    block-size: auto;
 
-    padding-top: 150px;
-    padding-bottom: 140px;
+    @media(min-width: 768px) {
+        padding: 90px 0;
+    }
+    
+    @media(min-width: 1200px) {
+
+        background-image: url("../img/contacts/contacts-bg.jpg");
+        background-repeat: repeat-y;
+        background-position: center;
+        background-color: #f4f8f9;
+        block-size: auto;
+
+        padding-top: 150px;
+        padding-bottom: 140px;
+    }
 }
 
 .section-contacts .title2 {
@@ -17,6 +27,7 @@
 .section-contacts_wrapper {
     position: relative;
     display: flex;
+    flex-direction: column;
     z-index: 1;
 
     .contacts-img {
@@ -24,27 +35,51 @@
         transform: translate(-79%, -1%);
         z-index: -1;
     }
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .contacts-content_link {
-    padding-top: 22px;
-    margin-right: 107px;
+    margin-right: 0;
+    padding-top: 0;
 
     p {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.5;
-        margin-bottom: 45px;
+        margin-bottom: 32px;
+    }
+
+    @media(min-width: 768px) {
+        margin-right: 80px;
+        width: 288px;
+
+        p {
+            font-size: 18px;
+            margin-bottom: 42px;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        padding-top: 22px;
+        margin-right: 107px;
+
+        p {
+            font-size: 20px;
+            margin-bottom: 45px;
+        }
     }
 }
 
 .link-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     color: #96969d;
     margin-bottom: 47px;
 
     li {
-        margin-bottom: 22px;
+        margin-bottom: 15px;
 
         &:last-child {
             margin-bottom: 0;
@@ -54,8 +89,19 @@
     span {
         display: inline-block;
         width: 90px;
-        margin-right: 105px;
+        margin-right: 176px;
         color: #000000;
+        font-weight: 800;
+    }
+
+    @media(min-width: 768px) {
+        span {
+            margin-right: 251px;
+        }
+    }
+    
+    @media(min-width: 1200px) {
+        font-size: 20px;
     }
 }
 
@@ -70,14 +116,26 @@
 /* ----------------------------------------------------- CONTACTS FORM ----------------------------------------------------- */
 
 .contacts-form {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 40px 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.004);
-    height: 545px;
-    width: 511px;
+    height: 460px;
+    width: 290px;
+
+    @media(min-width: 768px) {
+        width: 340px;
+        height: 462px;
+        padding: 40px 25px;
+    }
+    
+    @media(min-width: 1200px) {
+        width: 511px;
+        height: 545px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 .form-item {
@@ -142,21 +200,46 @@ input:active+label {
   }
 
 .topic {
+    height: 84px;
+    padding-top: 40px;
     width: 100%;
-    height: 105px;
-    padding-top: 55px;
+
+    /* @media(min-width: 768px) {
+        height: 84px;
+        padding-top: 40px;
+    } */
+    
+    @media(min-width: 1200px) {
+        height: 105px;
+        padding-top: 55px;
+    }
 }
 
 .message {
     width: 100%;
     height: 173px;
-    margin-bottom: 34px;
+    margin-bottom: 23px;
     padding-top: 54px;
+
+    @media(max-width: 767px) {
+        height: 163px;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    @media(max-width: 319px) {
+    }
 }
 
-.filled-button {
+.contacts-button{
+    display: block;
     cursor: pointer;
-    height: 63px;
-    padding-right: 51px;
-    padding-left: 38px;
+    height: 54px;
+    width: 100%;
+
+    @media(min-width: 1200px) {
+        height: 63px;
+        padding-right: 51px;
+        padding-left: 38px;
+    }
 }
