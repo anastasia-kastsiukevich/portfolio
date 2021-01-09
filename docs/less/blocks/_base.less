@@ -100,6 +100,11 @@ button {
     padding: 0px 15px;
     width: 320px;
 
+    @media(min-width: 580px) {
+        width: 520px;
+        padding: 0px 30px;
+    }
+
     @media(min-width: 768px) {
         width: 768px;
         padding: 0px 30px;
@@ -124,10 +129,4 @@ button {
         background-color: var(--yellow);
         z-index: -1;
     }
-}
-
-@media(max-width: 767px) {
-}
-
-@media(max-width: 319px) {
 }

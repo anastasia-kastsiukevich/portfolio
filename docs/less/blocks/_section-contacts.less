@@ -28,12 +28,18 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     z-index: 1;
 
     .contacts-img {
         position: absolute;
+        display: none;
         transform: translate(-79%, -1%);
         z-index: -1;
+
+        @media(min-width: 1200px) {
+            display: block;
+        }
     }
 
     @media(min-width: 768px) {
@@ -44,6 +50,7 @@
 .contacts-content_link {
     margin-right: 0;
     padding-top: 0;
+    padding-bottom: 28px;
 
     p {
         font-size: 16px;
@@ -53,7 +60,8 @@
 
     @media(min-width: 768px) {
         margin-right: 80px;
-        width: 288px;
+        width: 48%;
+        padding-bottom: 0;
 
         p {
             font-size: 18px;
@@ -64,6 +72,7 @@
     @media(min-width: 1200px) {
         padding-top: 22px;
         margin-right: 107px;
+        width: 522px;
 
         p {
             font-size: 20px;
@@ -73,12 +82,14 @@
 }
 
 .link-name {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     color: #96969d;
     margin-bottom: 47px;
 
     li {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 15px;
 
         &:last-child {
@@ -88,20 +99,18 @@
 
     span {
         display: inline-block;
-        width: 90px;
-        margin-right: 176px;
+        min-width: 90px;
         color: #000000;
         font-weight: 800;
-    }
-
-    @media(min-width: 768px) {
-        span {
-            margin-right: 251px;
-        }
+        margin-right: 107px;
     }
     
     @media(min-width: 1200px) {
         font-size: 20px;
+
+        li {
+            flex-direction: row;
+        }
     }
 }
 
@@ -123,7 +132,7 @@
     width: 290px;
 
     @media(min-width: 768px) {
-        width: 340px;
+        width: 48%;
         height: 462px;
         padding: 40px 25px;
     }
@@ -203,11 +212,6 @@ input:active+label {
     height: 84px;
     padding-top: 40px;
     width: 100%;
-
-    /* @media(min-width: 768px) {
-        height: 84px;
-        padding-top: 40px;
-    } */
     
     @media(min-width: 1200px) {
         height: 105px;
