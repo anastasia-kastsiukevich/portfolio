@@ -1,0 +1,156 @@
+.section-price {
+    position: relative;
+
+    padding-top: 105px;
+    padding-bottom: 90px;
+    background-color: rgb(0, 0, 0);
+
+    background-image: url("../img/price-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+        content: "";
+        display: block;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.5);     
+    }
+}
+
+.section-price__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.section-price__title {
+    margin-bottom: 70px;
+}
+
+.section-price__header {
+    margin-bottom: 78px;
+}
+
+.section-price__title .prise__title, .prise__header{
+    color: #ffffff;
+}
+
+.prise__sheet {
+    display: flex;
+    justify-content: center;
+}
+
+.prise__sheet1, .prise__sheet2, .prise__sheet3 {
+    width: 303px;
+    padding-top: 34px;
+    padding-bottom: 38px;
+    margin-right: 30px;
+    background-color: rgba(0, 0, 0, 0.75);     
+
+    color: #ffffff;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.prise__sheet2 {
+    background-color: rgba(48, 79, 254, 0.95);
+}
+
+.prise__sheet-cost {
+    padding-bottom: 29px;
+    width: inherit;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);  
+}
+
+.prise__sheet2 .prise__sheet-cost {
+    border-bottom: 1px solid rgb(44, 71, 230);         
+}
+
+.prise__sheet-cost h4 {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 2.8px;
+    margin-bottom: 15px;
+    color: rgb(179, 179, 179);
+    text-transform: uppercase;   
+}
+
+.prise__sheet2 .prise__sheet-cost h4 {
+    color: rgba(255, 255, 255, 0.3); 
+}
+
+.prise__sheet-cost .number {
+    margin-bottom: 25px;
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.prise__sheet-cost .currency {
+    display: inline-block;
+    width: 79px;
+    height: 23px;
+    background-color: rgba(255, 255, 255, 0.1);
+         
+    border-radius: 30px;
+    padding-top: 4px;
+    padding-left: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+.prise__sheet2 .currency {
+    background-color: rgb(39, 64, 204); 
+}
+
+.price__content {
+    padding-top: 25px;
+    top: 16px;
+    font-weight: 500;
+    line-height: 2.5;
+    list-style-type: none;
+    margin-bottom: 26px;
+}
+
+.price__button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+    }     
+}
+
+.prise__sheet2 .price__button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 102, 102);
+    border: none;   
+}

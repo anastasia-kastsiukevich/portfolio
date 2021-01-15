@@ -1,0 +1,39 @@
+.section-task {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 75px;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 187px;
+        height: 187px;
+        position: absolute;
+
+        top: 50%;
+        left: 0;
+        background-color: #a4eecb;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+}
+
+.section__container__task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 157px;
+    padding-left: 94px;
+}
+
+.task__content {
+    width: 470px;
+}
+
+.task__content .section-task__title {
+    margin-bottom: 33px;
+}
+
+.task__content .section-task__header {
+    margin-bottom: 45px;
+}
+  

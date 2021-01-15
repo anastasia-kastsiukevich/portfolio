@@ -1,0 +1,75 @@
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+body {
+    font-family: 'Roboto Condensed';
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    color: #FF0000;
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    color:#0000FF;
+    font-size: 42px; 
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    color:#008080;
+    font-size: 36px;
+}
+
+h4{
+    font-family: 'Playfair Display';
+    color: #DC143C;
+    font-size: 28px;
+}
+
+.item-center {
+    text-align: center;
+}
+
+/*table*/
+
+.data-dan {
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    text-align: left;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid #000000;
+}
+
+.dan-brown {
+    font-family: 'Playfair Display';
+    text-align: center;
+    background: #7FFFD4;
+}
+
+/*last-edits*/
+
+.university {
+    font-style: italic;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.three-dot {
+    text-align: right;
+}

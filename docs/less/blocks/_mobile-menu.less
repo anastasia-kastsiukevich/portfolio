@@ -5,7 +5,8 @@
     right: 0;
     width: 100%;
     max-width: 400px;
-    background-color: green;
+    background-image: url("/docs/img/menu/background-menu.jpg");
+    background-size: cover;
     z-index: 5;
     transform: translateX(100%);
 
@@ -16,4 +17,46 @@
 
 .mobile-menu.active {
     transform: translate(0);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 15px;
+}
+
+.menu-link {
+    transition: 0.5s;
+    font-size: 25px;
+    font-weight: 700;
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #ffffff;
+        position: relative;
+        transition: all 1s ease-in-out;
+
+        &:before {
+            content: attr(data-item);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 0;
+            color: #fcdf50;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+        }
+
+        &:hover {
+            &::before {
+              width: 100%;
+            }
+        }
+    }
 }

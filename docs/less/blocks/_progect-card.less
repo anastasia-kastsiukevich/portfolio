@@ -1,3 +1,9 @@
+.portfolio .title2 {
+    @media(min-width: 580px) {
+        text-align: center;
+    }
+}
+
 #project-card {
     display: flex;
     flex-wrap: wrap;
@@ -8,6 +14,13 @@
         margin-bottom: 48px;
         transition: 0.5s;
         overflow: hidden;
+    }
+
+    @media(min-width: 580px) {
+        a {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     @media(min-width: 768px) {
@@ -40,7 +53,7 @@
 .card-img {
     position: relative;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     line-height: 1.2;
 
     button {
@@ -68,6 +81,10 @@
         transition: 0.5s;
         z-index: 1;
     }
+}
+
+.control-active {
+    color: #000000;
 }
 
 .project-card_img:hover {
@@ -113,7 +130,7 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     z-index: 1;
 
     &:hover {
@@ -169,3 +186,9 @@
         font-size: 20px;
     }
 }
+
+/* .portfolio .link-for-all-work {
+    @media(min-width: 580px) {
+        text-align: center;
+    }
+} */

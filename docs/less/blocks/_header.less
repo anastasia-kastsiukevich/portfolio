@@ -1,9 +1,12 @@
 .header {
     padding-top: 33px;
     padding-bottom: 100px;
+    margin-bottom: 2px;
+    overflow: hidden;
 
     @media(min-width: 768px) {
         padding: 33px 15px 44px;
+        margin-bottom: 0;
     }
 
     @media(min-width: 1200px) {
@@ -23,10 +26,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 20px;
+    margin-bottom: 26px;
+    padding-right: 37px;
+    padding-left: 15px;
     
 
     @media(min-width: 768px) {
@@ -195,7 +198,7 @@
     
     font-size: 42px;
     font-weight: 800;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     line-height: 1.2;
 
     .underline {
@@ -320,6 +323,12 @@
         z-index: -1;
     }
 
+    @media(min-width: 580px) {
+        max-width: 291px;
+        margin: 0 auto;
+        margin-bottom: 58px;
+    }
+
     @media(min-width: 768px) {
         width: 41%;
     }
@@ -346,9 +355,18 @@
     margin-right: auto;
     margin-left: auto;
     z-index: 1;
+    transform: scale(1.8);
+    margin-top: -8px;
+    margin-bottom: 78px;
+
+    @media(min-width: 580px) {
+        transform: scale(1);
+    }
 
     @media(min-width: 768px) {
         margin-top: -68px;
+        margin-bottom: 0;
+        
     }
 
     @media(min-width: 1200px) {
@@ -373,19 +391,24 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    @media(min-width: 1200px) {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
 }
 
 .header-wrapper_content {
     .title3 {
         font-size: 30px;
-        margin-bottom: 38px;
+        margin-bottom: 21px;
         font-weight: 800;
     }
 
     li {
         font-size: 18px;
         list-style-type: none;
-        margin-bottom: 20px;
+        margin-bottom: 16px;
 
         &::first-letter {
             text-transform: uppercase;
