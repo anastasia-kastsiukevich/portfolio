@@ -1765,18 +1765,43 @@ input[type="submit"] {
   color: #ed9626;
 }
 .email-style.active {
-  top: -3px;
+  top: 3px;
+}
+@media (min-width: 768px) {
+  .email-style.active {
+    top: -3px;
+  }
 }
 .subject-style.active {
-  top: 35px;
+  top: 29px;
+}
+@media (min-width: 768px) {
+  .subject-style.active {
+    top: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .subject-style.active {
+    top: 35px;
+  }
 }
 .message-style.active {
-  top: 27px;
+  top: 35px;
+}
+@media (min-width: 768px) {
+  .message-style.active {
+    top: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .message-style.active {
+    top: 27px;
+  }
 }
 .email-style {
   top: 20px;
 }
-@media (width: 768px) {
+@media (min-width: 768px) {
   .email-style {
     top: 25px;
   }
@@ -1785,19 +1810,24 @@ input[type="submit"] {
   top: 44px;
   color: #bcbcbc;
 }
-@media (width: 768px) {
+@media (min-width: 768px) {
   .subject-style {
-    top: 59px;
+    top: 46px;
   }
 }
-@media (width: 1200px) {
+@media (min-width: 1200px) {
   .subject-style {
     top: 48px;
   }
 }
 .message-style {
-  top: 55px;
+  top: 41px;
   color: #bcbcbc;
+}
+@media (min-width: 768px) {
+  .message-style {
+    top: 55px;
+  }
 }
 .email {
   height: 63px;
@@ -1824,11 +1854,18 @@ input[type="submit"] {
   margin-bottom: 23px;
   padding-top: 54px;
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .message {
     height: 163px;
     padding-top: 40px;
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .message {
+    height: 173px;
+    margin-bottom: 23px;
+    padding-top: 54px;
   }
 }
 .contacts-button {
